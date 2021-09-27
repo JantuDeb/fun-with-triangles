@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculate Hypotaneous</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Fun With Triangle</h1>
+      <ul class="nav-menu">
+        <li>
+          <a class="nav-link" href="index.html">Quiz</a>
+        </li>
+        <li><a class="nav-link" href="triangle.html"> Is Triangle</a></li>
+        <li>
+          <a class="nav-link active" href="hypotenuse.html">Hypotaneous</a>
+        </li>
+        <li>
+          <a class="nav-link" href="areaoftriangle.html">Area of Trianglle</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h1 class="heading">
+        Calculate the length of the hypotenuse of a right triangle
+      </h1>
+      <div class="input-container">
+        <label class="input-label" for="base">Length of the base </label>
+        <input
+          class="input"
+          id="base"
+          type="number"
+          name="base"
+          placeholder="Enter the value of base"
+        />
+      </div>
+
+      <div class="input-container">
+        <label class="input-label" for="height"
+          >Length of the height (perpendiculer)</label
+        >
+        <input
+          class="input"
+          id="height"
+          type="number"
+          name="height"
+          placeholder="Enter the value of height"
+        />
+      </div>
+      <button type="submit" id="btn-calc-hypo">Calculate Hypotaneous</button>
+      <p id="message" style="display: none"></p>
+    </main>
+    <footer>
+      <p>Jantu Deb</p>
+      <ul class="footer-list">
+        <li>
+          <a class="links" href="https://github.com/JantuDeb" target="_blank">
+            GitHub
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="links"
+            href="https://twitter.com/Jantu__Deb"
+            target="_blank"
+          >
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a
+            class="links"
+            href="https://in.linkedin.com/in/jantu-deb-406760200"
+            target="_blank"
+          >
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="hypotenuse.js"></script>
+  </body>
+</html>
