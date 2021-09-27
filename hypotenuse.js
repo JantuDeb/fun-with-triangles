@@ -22,7 +22,7 @@ function calcHypo() {
     if (base >= 0 || height >= 0) {
         const hypotenuse = Math.sqrt((base * base + height * height))
         console.log(hypotenuse);
-        showMessage(`The length of the Hypotenuse is: ${hypotenuse}`)
+        showMessage(`The length of the Hypotenuse is: ${hypotenuse.toFixed(2)}`)
     } else showError()
 
 }
