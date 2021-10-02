@@ -14,7 +14,7 @@ function calcArea() {
         const area = Math.sqrt(s * (s - a) * (s - b) * (s - c))
         console.log(area);
         if (area)
-            showMessage(`Area of the triangle is = ${area}`)
+            showMessage(`Area of the triangle is = ${area.toFixed(2)}`)
     }
     else if (a < 0 || b < 0 || c < 0) showError("Values of side should be positive")
     else showError("A triangle with these sides can not be form");

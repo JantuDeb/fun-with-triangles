@@ -17,13 +17,19 @@ function createQuestionList() {
         questionElement.innerHTML = element.question
         // Create Html element for option
         var optionLabel_one = document.createElement("label")
+        optionLabel_one.className = "input-label"
         var optionLabel_two = document.createElement("label")
+        optionLabel_two.className = "input-label"
         var optionLabel_three = document.createElement("label")
+        optionLabel_three.className = "input-label"
 
         //creating radio button for option
         var optionRadioElement_one = document.createElement("input")
+        optionRadioElement_one.className = "radio-input"
         var optionRadioElement_two = document.createElement("input")
+        optionRadioElement_two.className = "radio-input"
         var optionRadioElement_three = document.createElement("input")
+        optionRadioElement_three.className = "radio-input"
 
         optionRadioElement_one.type = "radio"
         optionRadioElement_two.type = "radio"

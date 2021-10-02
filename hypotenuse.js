@@ -10,8 +10,8 @@ function showMessage(str) {
     messageText.style.color = "white";
 }
 
-function showError() {
-    messageText.innerHTML = "Base and height should be positive number";
+function showError(str) {
+    messageText.innerHTML = str;
     messageText.style.display = "block";
     messageText.style.color = "red";
 }
@@ -19,11 +19,13 @@ function showError() {
 function calcHypo() {
     const base = parseInt(inputBase.value)
     const height = parseInt(inputHeight.value)
-    if (base >= 0 || height >= 0) {
+    if (base === 0 || height === 0) showError("Base and height should not be 0")
+
+    else if (base >= 0 && height >= 0) {
         const hypotenuse = Math.sqrt((base * base + height * height))
         console.log(hypotenuse);
         showMessage(`The length of the Hypotenuse is: ${hypotenuse.toFixed(2)}`)
-    } else showError()
+    } else showError("Base and height should be positive number")
 
 }
 

@@ -19,7 +19,22 @@ const questions = [
         option2: "two right angle",
         option3: "no right angle",
         answer: "one right angle",
+    },
+    {
+        question: "  Which of the following can form a right angled triangle?",
+        option1: "14, 15, 26",
+        option2: "12, 16, 20",
+        option3: "8, 9, 13",
+        answer: "12, 16, 20",
+    },
+    {
+        question: "Which of the following triangles are always similar?",
+        option1: "Equilateral Triangle",
+        option2: "Isosceles Triangle",
+        option3: "Scalene Triangle",
+        answer: "Equilateral Triangle"
     }
+
 ]
 
 export default questions
