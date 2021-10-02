@@ -62,19 +62,35 @@ function createQuestionList() {
 
 function checkAnswer() {
     let score = 0;
+    let isChecked = false;
+    let answerd = 0
     for (let index = 0; index < questions.length; index++) {
         const element = questions[index];
         var inputName = "question" + index;
         const optionInput = document.getElementsByName(inputName)
         for (let index = 0; index < optionInput.length; index++) {
             const input = optionInput[index];
+            if (input.checked) {
+                isChecked = true
+                answerd++
+            }
+
+            console.log(input.checked);
             if (input.checked && input.value === element.answer) {
                 score++
             }
         }
-
     }
-    scoreTextElement.innerHTML = `Your score is ${score}`
+    if (isChecked) {
+        scoreTextElement.innerHTML = `Your score is ${score}, question attempted ${answerd}`
+        scoreTextElement.style.color = "green"
+    }
+    else {
+        scoreTextElement.innerHTML = "Answer at least one question"
+        scoreTextElement.style.color = "red"
+    }
+
+
 }
 
 buttonSubmit.addEventListener('click', () => checkAnswer())
